@@ -1,0 +1,63 @@
+.s-double
+  padding-top: 40px
+  .section-title
+    margin-bottom: 30px
+
+.double-left
+  padding-right: 70px
+  font-family: "AppleSDGothicNeo", sans-serif
+  color: #000
+  line-height: 1.2
+  ul
+    padding-left: 30px
+  li
+    position: relative
+    padding-left: 25px
+    margin-bottom: 15px
+    &:before
+      content: ''
+      position: absolute
+      width: 15px
+      height: 11px
+      +bg-cover
+      background-image: url('../img/icons/arrow-long.svg')
+      left: 0
+      top: 3px
+
+.double-right
+  .section-title
+    text-align: center
+
+.partners-slider
+  position: relative
+  padding: 0 25px
+  .partner-item
+    padding: 15px
+    margin-bottom: 20px
+    height: 72px
+    img
+      width: auto
+      height: auto
+      max-height: 100%
+  .owl-nav
+    text-align: right
+    button.owl-prev, button.owl-next
+      width: 16px
+      height: 12px
+      +bg-cover
+      background-image: url('../img/icons/arrow-long-black.svg')
+      +mt(.3s)
+      cursor: pointer
+      &.disabled
+        background-image: url('../img/icons/arrow-long-grey.svg')
+    button.owl-prev
+      transform: rotate(180deg)
+      margin-right: 10px
+
+
+.partner-item
+  background-color: #e7e7e7
+  display: flex
+  justify-content: center
+  align-items: center
+

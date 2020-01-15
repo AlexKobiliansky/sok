@@ -16,6 +16,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .double-right
+    margin-top: 40px
+    .section-title
+      text-align: left
+
+  .double-left
+    padding-right: 25px
+
   .intro-slide
     padding: 40px
     background-position-x: 70%
@@ -39,6 +47,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .double-left
+    ul
+      padding-left: 0
+
+  .partners-slider
+    padding: 0
+
+  .section-title-index
+    font-size: 24px
+
   .service-item
     &-icon
       height: 60px
@@ -55,6 +73,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .double-left
+    padding-right: 0
+
+  .section-title-index
+    font-size: 20px
 
   .service-item
     &-content
@@ -78,6 +102,14 @@
 
 
 @media (max-width: 390px)
+
+  .double-left
+    font-size: 14px
+
+  .partners-slider
+    .partner-item
+      height: 100px
+      padding: 30px
 
   .intro-dot
     height: auto

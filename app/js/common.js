@@ -43,18 +43,7 @@ $(document).ready(function(){
 
     $('.sm').smartmenus();
 
-    // Выравнивание высот подобных блоков
-    function heightses() {
-        if ($(window).width()>480) {
-            $('.service-item-title').matchHeight({byRow: true})
-        }
-    }
 
-    $(window).resize(function() {
-        heightses();
-    });
-
-    heightses();
 
     $('.intro-slider').slick({
         dots: true,
@@ -66,6 +55,33 @@ $(document).ready(function(){
         cssEase: 'linear',
         arrows: false,
         dotsClass: "intro-dot"
+    });
+
+    $('.partners-slider').owlCarousel({
+        dots: false,
+        nav: true,
+        margin: 20,
+        navText: ["", ""],
+        navSpeed: 600,
+        responsive: {
+            0: {
+                items: 1
+            },
+            390: {
+                items: 2
+            },
+            480: {
+                items: 3
+            },
+            992: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+
+        }
+
     });
 
     $('img.svg').each(function(){
@@ -100,7 +116,18 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+// Выравнивание высот подобных блоков
+    function heightses() {
+        if ($(window).width()>480) {
+            $('.service-item-title').matchHeight({byRow: 0})
+        }
+    }
 
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
