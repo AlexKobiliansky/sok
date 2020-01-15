@@ -1,0 +1,43 @@
+.s-services
+  padding-top: 60px
+
+.service-item
+  font-family: "AppleSDGothicNeo", sans-serif
+  border: 1px solid #f6f6f6
+  border-radius: 3px
+  box-shadow: 0 5px 9px 0 rgba(#000, .05)
+  margin-bottom: 30px
+  &-content
+    padding: 28px 10px 15px 30px
+  &-icon
+    height: 70px
+    width: auto
+    +mt(.3s)
+    fill: $accent
+    margin-bottom: 22px
+  &-title
+    font-size: 17px
+    font-weight: 700
+    line-height: 1
+  &-link
+    display: block
+    +mt(.3s)
+    font-size: 14px
+    letter-spacing: 0.02em
+    color: #818181
+    position: relative
+    line-height: 1
+    padding: 16px 50px 16px 30px
+    border-top: 2px solid #f6f6f6
+    .svg
+      height: 14px
+      width: auto
+      fill: #818181
+      +mt(.3s)
+      position: absolute
+      right: 24px
+      top: calc(50% - 7px)
+    &:hover
+      color: #000
+      .svg
+        fill: #000
