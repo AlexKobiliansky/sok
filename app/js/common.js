@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-    /**
-     * mobile-mnu customization
-     */
+    /** mobile-mnu customization */
     var mmenu = $('#mobile-mnu');
     var menuLogo = mmenu.data("logo");
     var $mmenu = mmenu.mmenu({
@@ -41,11 +39,21 @@ $(document).ready(function(){
             mmenuBtn.removeClass( "is-active" );
         }, 300);
     });
-    /**
-     * end mobile-mnu customization
-     */
+    /** end mobile-mnu customization */
 
     $('.sm').smartmenus();
+
+    $('.intro-slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        // autoplay: true,
+        // autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        dotsClass: "intro-dot"
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
