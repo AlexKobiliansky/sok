@@ -1,0 +1,125 @@
+.main-head
+  padding: 15px 0
+
+.top-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.main-mnu
+  &>ul
+    &>li
+      display: inline-block
+      margin: 0 30px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+  a
+    color: #000
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      +mt(.3s)
+      height: 1.5px
+      width: 100%
+      bottom: -1px
+      left: 0
+      background-color: $accent
+      opacity: 0
+    &:hover
+      color: $accent
+      &:after
+        opacity: 1
+
+.head-contacts
+  line-height: 1
+  text-align: right
+
+.head-call
+  font-size: 20px
+  font-weight: 900
+  color: $accent
+  &:hover, &:active, &:focus
+    color: $accent
+
+.head-worktime
+  font-size: 14px
+  font-weight: 300
+  margin-top: 3px
+
+// start MAIN MENU
+.sm-mint
+  border: none
+  ul
+    padding: 0
+    margin-top: 10px!important
+    a
+      .sub-arrow
+        border-left-color: #000
+      &:hover, &.highlighted
+        color: $accent
+        background-color: transparent
+        &:after
+          opacity: 0
+        .sub-arrow
+          border-left-color: $accent
+  &>li
+    &>a.has-submenu
+      .sub-arrow
+        display: none
+  a, a:hover
+    +mt(.3s)
+    padding: 0
+    background-color: transparent
+
+  a.has-submenu
+    padding-right: 0
+  a.highlighted
+    padding: 0
+    background-color: transparent
+    box-shadow: none
+  ul
+    background: #fff
+//end MAIN MENU
+
+.hamburger
+  padding: 0
+  position: relative
+  top: 3px
+  display: none
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: $text
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.55)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+//mmenu customization end

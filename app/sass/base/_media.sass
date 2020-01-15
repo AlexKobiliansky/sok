@@ -5,15 +5,44 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .main-mnu
+    &>ul
+      &>li
+        margin: 0 20px
 
 // ≥992px
 +media-breakpoint-down(md)
+  .head-contacts
+    text-align: center
+
+  .main-mnu
+    display: none
+
+  .hamburger
+    display: block
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .mm-logo
+    max-width: 100%
+    width: 200px
+    height: 105px
+    margin-top: 15px
+
+
+@media (max-width: 390px)
+  .logo.head-item
+    img
+      width: 80px
+
+
+  .head-call
+    font-size: 16px
+  .head-worktime
+    font-size: 12px
 
 
 /*==========  Mobile First  ==========*/
