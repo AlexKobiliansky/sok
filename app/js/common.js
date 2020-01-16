@@ -43,14 +43,12 @@ $(document).ready(function(){
 
     $('.sm').smartmenus();
 
-
-
     $('.intro-slider').slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
-        // autoplay: true,
-        // autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 4000,
         fade: true,
         cssEase: 'linear',
         arrows: false,
@@ -129,6 +127,21 @@ $(document).ready(function(){
 
     heightses();
 
+    /** ФОРМЫ */
+    var uPhone = $('.user-phone');
+    uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
+
+    uPhone.on('click', function (ele) {
+        var needelem = ele.target || event.srcElement;
+        needelem.setSelectionRange(4,4);
+        needelem.focus();
+    });
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -142,4 +155,5 @@ $(document).ready(function(){
         });
         return false;
     });
+    /** /ФОРМЫ */
 });

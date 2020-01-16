@@ -16,6 +16,23 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .body-form
+    +bg-cover()
+    background-position: left bottom
+    .form-labels-wrap
+      flex-direction: column
+      align-items: flex-start
+    label
+      width: 100%
+      margin-bottom: 15px
+    .btn-wrap
+      width: 100%
+      margin-top: 30px
+      text-align: center
+    .btn
+      padding: 12px 30px
+      width: auto
+
   .double-right
     margin-top: 40px
     .section-title
@@ -74,6 +91,9 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .body-form
+    padding: 50px 25px
+
   .double-left
     padding-right: 0
 
@@ -102,6 +122,13 @@
 
 
 @media (max-width: 390px)
+
+  form
+    h3
+      font-size: 24px
+    p
+      font-size: 14px
+      line-height: 1.2
 
   .double-left
     font-size: 14px

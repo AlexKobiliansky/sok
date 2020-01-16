@@ -1,0 +1,51 @@
+form
+  background-color: #000
+  color: #fff
+  text-align: center
+  h3
+    font-size: 30px
+    line-height: 1
+    margin-bottom: 15px
+  p
+    font-size: 18px
+    margin-bottom: 40px
+  label
+    display: block
+    margin-bottom: 0
+  input
+    width: 100%
+    line-height: 1
+    font-size: 16px
+    //font-weight: 300
+    background-color: transparent
+    color: #fff
+    border: none
+    border-bottom: 1px solid #fff
+    padding: 12px 0
+    &::placeholder
+      color: #fff
+    &.error
+      color: red!important
+      border-color: red!important
+      &::placeholder
+        color: red!important
+  .help-block
+    display: none!important
+
+
+.body-form
+  background-repeat: no-repeat
+  background-image: url('../img/bg-form-1.jpg')
+  padding: 60px 70px 85px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  .btn
+    width: 155px
+  label
+    width: calc((100% - 155px)/3 - 30px)
+
+
+
+
