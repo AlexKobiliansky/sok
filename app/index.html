@@ -27,6 +27,20 @@
 </head>
 
 <body>
+<!-- preloader -->
+<div class="preloader">
+	<div id="cube-loader">
+		<div class="caption">
+			<div class="cube-loader">
+				<div class="cube loader-1"></div>
+				<div class="cube loader-2"></div>
+				<div class="cube loader-4"></div>
+				<div class="cube loader-3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /preloader -->
 
 <div id="page-container">
 	<!-- mobile-mnu -->
@@ -113,7 +127,7 @@
 					<div class="intro-slide-content">
 						<h1>Столичная оценочная <br /> компания</h1>
 						<div class="intro-slide-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, repudiandae.</div>
-						<a href="#0" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
+						<a href="#popup-form" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
 					</div>
 
 				</div>
@@ -124,7 +138,7 @@
 					<div class="intro-slide-content">
 						<h1>Мало текста</h1>
 						<div class="intro-slide-desc">Lorem ipsum</div>
-						<a href="#0" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
+						<a href="#popup-form" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
 					</div>
 
 				</div>
@@ -135,7 +149,7 @@
 					<div class="intro-slide-content">
 						<h1>Много <br> много <br> текста</h1>
 						<div class="intro-slide-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, qui!</div>
-						<a href="#0" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
+						<a href="#popup-form" class="btn btn-accent btn-rounded">Бесплатная консультация</a>
 					</div>
 
 				</div>
@@ -325,11 +339,11 @@
 	<!-- ======= SECTION FORM START ======= -->
 	<section class="s-form">
 		<div class="container">
-			<form action="#0" class="contact-form body-form">
+			<form class="contact-form body-form">
 				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="VOKS">
+				<input type="hidden" name="project_name" value="Столичная оценочная компания">
 				<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
-				<input type="hidden" name="form_subject" value="Заявка с сайта VOKS">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Столичная оценочная компания">
 				<!-- END Hidden Required Fields -->
 
 				<h3>Станьте нашим клиентом!</h3>
@@ -356,10 +370,106 @@
 		</div>
 	</section>
 	<!-- ======= SECTION FORM END ======= -->
+
+	<!-- ======= FOOTER START ======= -->
+	<footer class="main-foot">
+		<div class="container">
+			<div class="row">
+				<div class="order-4 order-sm-3 order-lg-1 col-sm-6 col-lg-4 col-xl-4">
+					<a href="/" class="logo-foot">
+						<img src="img/logo-l-dark.png" alt="alt" class="img-responsive">
+					</a>
+				</div>
+				<div class="order-1 order-lg-2 col-sm-6 col-lg-2 col-xl-2">
+					<nav class="foot-mnu">
+						<ul>
+							<li><a href="#0">О компании</a></li>
+							<li><a href="#0">Экспертиза</a></li>
+							<li><a href="#0">Наша команда</a></li>
+							<li><a href="#0">Наши клиенты</a></li>
+							<li><a href="#0">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="order-2 order-lg-3 col-sm-6 col-lg-3 col-xl-2">
+					<nav class="foot-mnu">
+						<ul>
+							<li><a href="#0">Все виды оценок</a></li>
+							<li><a href="#0">Оспаривание кадастровой стоимости</a></li>
+							<li><a href="#0">Строительный аудит и экспертиза</a></li>
+							<li><a href="#0">Услуги для застройщиков</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="order-3 order-sm-4 order-lg-4 col-sm-6 col-lg-3 col-xl-3 offset-xl-1">
+					<h3>Контакты</h3>
+					<a href="tel:+88000000000" class="foot-call">8 (800) 000-00-00</a>
+					<a href="mailto:info@domen.com" class="foot-mail">info@domen.com</a>
+					<div class="soc-wrap">
+						<p>Мы в социальных сетях</p>
+						<div class="socials">
+							<!-- soc-item -->
+							<a href="#0" class="soc-item" target="_blank">
+								<img src="img/icons/soc-icon-1.svg" alt="alt" class="svg">
+							</a>
+							<!-- /soc-item -->
+
+							<!-- soc-item -->
+							<a href="#0" class="soc-item" target="_blank">
+								<img src="img/icons/soc-icon-2.svg" alt="alt" class="svg">
+							</a>
+							<!-- /soc-item -->
+
+							<!-- soc-item -->
+							<a href="#0" class="soc-item" target="_blank">
+								<img src="img/icons/soc-icon-3.svg" alt="alt" class="svg">
+							</a>
+							<!-- /soc-item -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ======= FOOTER END ======= -->
 </div>
 
 
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Столичная оценочкая компания">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Столичная оценочкая компания">
+		<!-- END Hidden Required Fields -->
 
+		<h3>Станьте нашим клиентом!</h3>
+		<p>Оставьте Ваши контакты и наши менеджеры свяжутся с Вами</p>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
+			</label>
+			<label>
+				<input type="text" data-validation="email" name="email" placeholder="E-mail" autocomplete="off">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Телефон"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+			<div class="btn-wrap">
+				<button type="submit" class="btn btn-accent">Стать клиентом</button>
+			</div>
+		</div>
+	</form>
+
+	<form class="popup-form greeting" id="greeting">
+		<h3>Заявка отправлена!</h3>
+		<p>Наши менеджеры свяжутся с Вами в ближайшее время!</p>
+	</form>
+</div>
 <script src="js/scripts.min.js"></script>
 
 </body>

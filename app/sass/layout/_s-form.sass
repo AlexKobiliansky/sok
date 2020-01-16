@@ -46,6 +46,53 @@ form
   label
     width: calc((100% - 155px)/3 - 30px)
 
+.popup-form
+  padding: 50px
+  color: #000
+  background-color: #fff
+  display: block
+  position: relative
+  width: 100%
+  max-width: 600px
+  border: 1px solid #000
+  margin-left: auto
+  margin-right: auto
+  input
+    color: #000
+    border-bottom: 1px solid #000
+    &::placeholder
+      color: #000
+  label
+    margin-bottom: 15px
+  .btn-wrap
+    margin-top: 30px
+  .btn
+    padding: 12px 30px
+  &.greeting
+    padding: 70px
+    p
+      margin-bottom: 0
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
 
 
 
