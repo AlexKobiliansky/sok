@@ -27,6 +27,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-partners
+    padding: 30px 0 10px
+
+  .partners-wrap
+    .partner-item
+      width: calc(25% - 15px)
+      margin-right: 20px
+      margin-bottom: 20px
+
   .s-contacts
     padding-top: 45px
 
@@ -93,6 +102,19 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-partners
+    padding-bottom: 15px
+
+  .partners-wrap
+    .partner-item
+      width: calc(33.333% - 10px)
+      margin-right: 15px
+      margin-bottom: 15px
+      &:nth-child(3n)
+        margin-right: 0
+      &:nth-child(4n)
+        margin-right: 15px
+
   .page-head-wrap
     padding: 25px 40px
     h1
@@ -124,6 +146,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .partners-wrap
+    justify-content: space-between
+    .partner-item
+      width: calc(50% - 10px)
+      margin-right: 0
+      margin-bottom: 20px
+      &:nth-child(3n)
+        margin-right: 0
+      &:nth-child(4n)
+        margin-right: 0
 
   .s-page-content
     padding: 30px 0
