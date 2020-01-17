@@ -5,6 +5,17 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .contacts-wrap
+    width: 100%
+
+  .contacts-left, .contacts-right
+    width: calc(50% - 15px)
+
+  .contacts-left
+    font-size: 14px
+
+
   .intro-slide
     background-position-x: 50%
 
@@ -15,6 +26,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-contacts
+    padding-top: 45px
+
+  .simple-form-wrap
+    display: none
+  
+  .page-head-wrap
+    min-height: 130px
+    h1
+      font-size: 36px
 
   .foot-mnu
     margin-bottom: 30px
@@ -71,6 +93,11 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .page-head-wrap
+    padding: 25px 40px
+    h1
+      font-size: 30px
+
   .double-left
     ul
       padding-left: 0
@@ -97,6 +124,22 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contacts-wrap
+    flex-direction: column
+
+  .contacts-left, .contacts-right
+    width: 100%
+
+  .contacts-left
+    margin-bottom: 15px
+    font-size: 16px
+
+  .page-head-wrap
+    padding: 20px
+    min-height: 100px
+    h1
+      font-size: 24px
 
   .main-foot
     padding-top: 30px

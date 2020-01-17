@@ -12,7 +12,7 @@ form
   label
     display: block
     margin-bottom: 0
-  input
+  input, textarea
     width: 100%
     line-height: 1
     font-size: 16px
@@ -72,6 +72,28 @@ form
     padding: 70px
     p
       margin-bottom: 0
+
+.simple-form
+  background-color: #fff
+  margin-top: 50px
+  input, textarea
+    color: rgba(#000, .6)
+    border-color: rgba(#000, .6)
+    padding: 8px 0
+    &::placeholder
+      color: rgba(#000, .6)
+    &:focus
+      color: #000
+      border-color: #000
+  label
+    margin-bottom: 15px
+  textarea
+    height: 75px
+    resize: none
+  .btn
+    width: 100%
+    padding: 18px
+
 
 //MY_MFP_ZOOM_IN
 .my-mfp-zoom-in
