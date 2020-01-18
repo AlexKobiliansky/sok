@@ -163,7 +163,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             $.magnificPopup.open({
