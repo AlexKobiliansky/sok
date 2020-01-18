@@ -29,3 +29,45 @@
       text-decoration: none
     &:visited
       color: $accent
+
+.algorithm
+  padding-top: 35px
+  counter-reset: algorithm
+
+.alg-wrap
+  margin-top: 35px
+  display: flex
+  justify-content: space-between
+
+.alg-item
+  width: 33.333%
+  padding-right: 100px
+  position: relative
+  &-icon
+    height: 70px
+    width: auto
+    fill: $accent
+    margin-bottom: 8px
+  &:before
+    counter-increment: algorithm
+    content: "0"counter(algorithm)
+    position: absolute
+    font-size: 72px
+    font-weight: 700
+    color: #d2d2d2
+    opacity: .33
+    left: -15px
+    top: 65px
+    line-height: 1
+  &:after
+    content: ''
+    position: absolute
+    width: 160px
+    height: 44px
+    background-image: url('../img/icons/alg-arrow.png')
+    +bg-cover
+    right: 35px
+    top: 8px
+  &:last-child
+    &:after
+      display: none
