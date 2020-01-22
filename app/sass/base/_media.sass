@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .top-line
+    .svg
+      max-width: 168px
+
   .contacts-wrap
     width: 100%
 
@@ -22,7 +26,8 @@
   .main-mnu
     &>ul
       &>li
-        margin: 0 20px
+        margin: 0 15px
+
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -116,6 +121,18 @@
   .hamburger
     display: block
 
+  .body-form
+    padding: 25px
+    background-image: none
+    &-white
+      color: #000
+      background-color: #fff
+      input
+        color: #000
+        border-color: #000
+        &::placeholder
+          color: #000
+
 // ≥768px
 +media-breakpoint-down(sm)
 
@@ -176,6 +193,8 @@
     &-desc
       font-size: 14px
 
+
+
 // ≥480px
 +media-breakpoint-down(xs)
 
@@ -234,8 +253,24 @@
     h3
       margin-bottom: 15px
 
-  .body-form
-    padding: 50px 25px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .double-left
     padding-right: 0
@@ -263,8 +298,18 @@
     height: 105px
     margin-top: 15px
 
+  .logo.head-item
+    .svg
+      max-width: 140px
+
 
 @media (max-width: 390px)
+
+  .normal-logo
+    display: none
+
+  .mini-logo
+    display: block
 
   .s-page-content
     font-size: 14px
